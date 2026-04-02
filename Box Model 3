@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3 - Bordas e Variantes</title>
+    <style>
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(4, 150px); /* Ajustado para 4 colunas conforme a imagem */
+            gap: 15px;
+        }
+
+        .forma {
+            width: 150px;
+            height: 150px;
+            box-sizing: border-box;
+            border: 1px solid #5a5a5a;
+        }
+
+        .circulo { border-radius: 50%; }
+
+        /* Estilo para o quadrado com borda verde grossa */
+        .borda-especial {
+            border: 15px solid #72bb72;
+            background-color: #ffffff;
+        }
+
+        .amarelo { background-color: #ffff6b; }
+        .verde-claro { background-color: #adfbad; }
+        .pessego { background-color: #ffc1a9; }
+        .branco { background-color: #ffffff; }
+    </style>
+</head>
+<body>
+    <div class="grid-3">
+        <div class="forma circulo amarelo"></div>
+        <div class="forma borda-especial"></div>
+        <div class="forma verde-claro"></div>
+        <div class="forma branco"></div>
+        
+        <div class="forma amarelo"></div>
+        <div class="forma circulo verde-claro"></div>
+        <div class="forma borda-especial"></div>
+        <div class="forma pessego"></div>
+
+        <div class="forma verde-claro"></div>
+        <div class="forma branco"></div>
+        <div class="forma circulo branco"></div>
+        <div class="forma borda-especial"></div>
+    </div>
+</body>
+</html>
