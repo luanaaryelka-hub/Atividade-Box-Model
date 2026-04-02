@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4 - Coluna Destacada</title>
+    <style>
+        /* Container relativo para posicionar a faixa de fundo */
+        .container-ex4 {
+            position: relative;
+            display: inline-grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* A faixa roxa que fica atrás da coluna 2 */
+        .faixa-roxa {
+            position: absolute;
+            top: 0;
+            left: 180px; /* Alinhado com a segunda coluna */
+            width: 170px;
+            height: 100%;
+            background-color: #ddcaf8;
+            z-index: -1; /* Fica atrás das bolinhas */
+        }
+
+        .bola {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #5a5a5a;
+        }
+
+        .amarelo { background-color: #ffff6b; }
+        .verde-claro { background-color: #adfbad; }
+    </style>
+</head>
+<body>
+    <div class="container-ex4">
+        <div class="faixa-roxa"></div>
+        
+        <div class="bola amarelo"></div>
+        <div class="bola verde-claro"></div>
+        <div class="bola amarelo"></div>
+        
+        <div class="bola amarelo"></div>
+        <div class="bola verde-claro"></div>
+        <div class="bola verde-claro"></div>
+        
+        <div class="bola verde-claro"></div>
+        <div class="bola verde-claro"></div>
+        <div class="bola amarelo"></div>
+    </div>
+</body>
+</html>
