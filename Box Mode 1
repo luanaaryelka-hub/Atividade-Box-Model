@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1 - Grade de Quadrados</title>
+    <style>
+        /* Configuração do Grid 3x3 */
+        .grid-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 150px); /* 3 colunas de 150px */
+            gap: 10px; /* Espaço entre os blocos */
+        }
+
+        /* Estilo base dos quadrados */
+        .quadrado {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #5a5a5a;
+        }
+        
+        .amarelo { background-color: #ffff6b; }
+        .verde-claro { background-color: #adfbad; }
+        .pessego { background-color: #ffc1a9; }
+        .branco { background-color: #ffffff; }
+    </style>
+</head>
+<body>
+    <div class="grid-1">
+        <div class="quadrado amarelo"></div>
+        <div class="quadrado branco"></div>
+        <div class="quadrado verde-claro"></div>
+        
+        <div class="quadrado amarelo"></div>
+        <div class="quadrado verde-claro"></div>
+        <div class="quadrado pessego"></div>
+        
+        <div class="quadrado verde-claro"></div>
+        <div class="quadrado branco"></div>
+        <div class="quadrado branco"></div>
+    </div>
+</body>
+</html>
