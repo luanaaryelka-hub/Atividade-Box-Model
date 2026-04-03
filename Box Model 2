@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 2 - Formas Geométricas</title>
     <style>
         .grid-2 {
@@ -17,27 +19,42 @@
         }
 
         /* Classe para tornar a div circular */
-        .circulo { border-radius: 50%; }
+        .circulo {
+            border-radius: 50%;
+        }
 
-        .amarelo { background-color: #ffff6b; }
-        .verde-claro { background-color: #adfbad; }
-        .pessego { background-color: #ffc1a9; }
-        .branco { background-color: #ffffff; }
+        .amarelo {
+            background-color: #ffff6b;
+        }
+
+        .verde-claro {
+            background-color: #adfbad;
+        }
+
+        .pessego {
+            background-color: #ffc1a9;
+        }
+
+        .branco {
+            background-color: #ffffff;
+        }
     </style>
 </head>
+
 <body>
     <div class="grid-2">
         <div class="forma circulo amarelo"></div>
         <div class="forma branco"></div>
         <div class="forma verde-claro"></div>
-        
+
         <div class="forma pessego"></div>
         <div class="forma circulo verde-claro"></div>
         <div class="forma pessego"></div>
-        
+
         <div class="forma verde-claro"></div>
         <div class="forma pessego"></div>
         <div class="forma circulo amarelo"></div>
     </div>
 </body>
+
 </html>
